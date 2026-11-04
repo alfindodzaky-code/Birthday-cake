@@ -2,7 +2,7 @@
 var cake=document.getElementById('cake'),hb=document.getElementById('hb'),nm=document.getElementById('nm'),inp=document.getElementById('name');
 
 // teks muncul huruf demi huruf
-var txt='Selamat Ulang Tahun, '+(localStorage.getItem('bd-name')||'Lovie')+'!';
+var txt='Selamat Ulang Tahun, '+(localStorage.getItem('bd-name')||'Raysha Aryani')+'!';
 txt.split('').forEach(function(c,i){
   var s=document.createElement('span');
   s.textContent=c===' '?'\u00a0':c;
