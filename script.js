@@ -11,13 +11,13 @@ txt.split('').forEach(function(c,i){
 });
 
 // nama (disimpan di browser)
-var saved='Lovie';
+var saved='Raysha Aryani';
 try{saved=localStorage.getItem('bd-name')||'Lovie'}catch(e){}
 function setName(v){
-  nm.textContent=v||'Lovie';
+  nm.textContent=v||'Raysha Aryani';
   try{localStorage.setItem('bd-name',v)}catch(e){}
 }
-inp.value=saved==='Lovie'?'':saved;
+inp.value=saved==='Raysha Aryani'?'':saved;
 setName(saved);
 inp.addEventListener('input',function(){setName(inp.value.trim())});
 
