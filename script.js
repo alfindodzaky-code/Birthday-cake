@@ -1,8 +1,8 @@
 (function(){
 var cake=document.getElementById('cake'),hb=document.getElementById('hb'),nm=document.getElementById('nm'),inp=document.getElementById('name');
 
-// teks muncul huruf demi huruf
-var txt='Selamat Ulang Tahun, '+(localStorage.getItem('bd-name')||'Raysha Aryani')+'!';
+// teks muncul huruf demi hurufvar txt='Selamat Ulang Tahun, Raysha Aryani!';
+var txt='Selamat Ulang Tahun, Raysha Aryani!';
 txt.split('').forEach(function(c,i){
   var s=document.createElement('span');
   s.textContent=c===' '?'\u00a0':c;
@@ -12,7 +12,6 @@ txt.split('').forEach(function(c,i){
 
 // nama (disimpan di browser)
 var saved='Raysha Aryani';
-try{saved=localStorage.getItem('bd-name')||'Raysha Aryani'}catch(e){}
 function setName(v){
   nm.textContent=v||'Raysha Aryani';
   try{localStorage.setItem('bd-name',v)}catch(e){}
