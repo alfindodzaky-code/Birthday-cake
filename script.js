@@ -12,7 +12,7 @@ txt.split('').forEach(function(c,i){
 
 // nama (disimpan di browser)
 var saved='Raysha Aryani';
-try{saved=localStorage.getItem('bd-name')||'Lovie'}catch(e){}
+try{saved=localStorage.getItem('bd-name')||'Raysha Aryani'}catch(e){}
 function setName(v){
   nm.textContent=v||'Raysha Aryani';
   try{localStorage.setItem('bd-name',v)}catch(e){}
